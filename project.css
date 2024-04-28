@@ -1,0 +1,347 @@
+.main{
+    background-image: url(images/hero-bg.jpg);
+    background-position: center center;
+    background-size: max(1200px , 100vw);
+    height: 100vh;
+    width: 200vh;
+    position: relative;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 18px 60px;
+    box-shadow: 0 5px 10 px rgba(0, 0, 0,0.2)
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    position: relative;
+    margin: 0px 10px;
+    padding: 0px 2px;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.brand{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+} 
+.navbar ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 3px;
+    margin-bottom: -2px;
+    background: linear-gradient(to right, #855555,#65d555  );
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.order{
+    background-color: #ff416c;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.order:hover{
+    background-color: #855555;
+}
+
+.box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+
+}
+
+.hero{ 
+    font-family: "Open Sans", sans-serif ;
+    height: calc(100% - 56px);
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 15PX;
+    padding: 30px;
+}
+.hero :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 60px;
+}
+.hero :nth-child(2){
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#fast{
+    background-image: url(images/hero-bg.jpg);
+    background-position: center center;
+    background-size: max(1200px , 100vw);
+    height: 100vh;
+    width: 200vh;
+    position: relative;
+}
+.o1{
+    justify-content: center;
+    align-items: center;
+}
+.o1 li{
+    list-style: none;
+    position: relative;
+    margin: 4px ;
+    padding: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 29px;
+}
+.img1{
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    opacity: 1;
+    transition: .5s ease;
+}
+.img1:hover{
+    opacity: 0.3;
+}
+.menu{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.menu:hover{
+    background-color: #ff416c;
+}
+
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    box-shadow: 0 5px 10 px rgba(0, 0, 0,0.2)
+}
+.navbar1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar1 ul li{
+    list-style: none;
+    position: relative;
+    margin: 0px 10px;
+    padding: 0px 2px;
+}
+.navbar1 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+.navbar1 ul li a:hover{
+    background-color: #855555;
+}
+.delicious{
+    font-weight: bold;
+}
+.img2{
+    width: 40%;
+    height: 40%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease;
+}
+.img2:hover{
+    opacity: 0.2;
+}
+.delicious2{
+    font-weight: bold;
+    
+}
+.img3{
+    width: 35%;
+    height: 35%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease;
+    padding-bottom: 10px;
+}
+.img3:hover{
+    opacity: 0.2;
+}
+.img4{
+    width: 35%;
+    height: 35%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}
+.img4:hover{
+    opacity: 0.2;
+}
+.menu1{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px ;
+    margin-top: 10px;
+}
+.menu1:hover{
+    background-color:  #ff416c;
+}
+.bug{
+    width: 35%;
+    height: 35%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}
+.bug:hover{
+    opacity: 0.3;
+}
+.bug1{
+    width: 38%;
+    height: 38%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}
+.bug1:hover{
+    opacity: 0.3;
+}
+.pas{
+    width: 45%;
+    height: 45%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}
+.pas:hover{
+    opacity: 0.3;
+}
+.pas1{
+    width: 32%;
+    height: 32%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}.pas1:hover{
+    opacity: 0.3;
+}
+.pas2{
+    width: 37%;
+    height: 37%;
+    margin-top: 15px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease; 
+    margin-bottom: 10px;
+}
+.pas2:hover{
+    opacity: 0.3;
+}
+#about{
+    background-color: black;
+     padding: 30px;
+     margin: 40px;
+}
+.ab{
+    width: 70%;
+    height: 70%;
+}
+.feane{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    padding: 10px;
+    margin: 30px;
+}
+.pp{
+    color: white;
+}
+.menu2{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px ;
+    margin-top: 30px;
+}
+#footer{
+    background-color: black;
+    padding: 40px;
+    margin: 30px;
+}
+.pp1{
+    color: white;
+}
+.pp1:hover{
+    color: #65d555;
+}
+.pp2{
+    color: white;
+    font-size: 20px;
+}
+.pp2:hover{
+    color: #65d555;
+}
+.menu3{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px ;
+    margin-top: 30px;
+    color: white;
+}
